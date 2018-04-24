@@ -1,0 +1,16 @@
+{
+  "name": "drupal/one_time_grant",
+  "type": "drupal-module",
+  "description": "Provide a custom grant type for drupal/simple_auth.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/one_time_grant",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/one_time_grant",
+    "source": "http://cgit.drupalcode.org/one_time_grant"
+  },
+  "require": {
+    "drupal/simple_oauth": "^3.6"
+  }
+}

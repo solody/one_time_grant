@@ -1,0 +1,19 @@
+
+one_time_grant.one_time_grant_settings_form:
+  path: '/admin/config/one_time_grant/settings'
+  defaults:
+    _form: '\Drupal\one_time_grant\Form\SettingsForm'
+    _title: 'SettingsForm'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+
+
+one_time_grant.one_time_token_controller_generate:
+  path: '/one_time_grant/token'
+  defaults:
+    _controller: '\Drupal\one_time_grant\Controller\OneTimeTokenController::generate'
+    _title: 'generating one_time_token'
+  requirements:
+    _permission: 'access content'

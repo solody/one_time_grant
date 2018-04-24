@@ -1,0 +1,7 @@
+one_time_grant.one_time_grant_settings_form:
+  title: 'One Time Grant 设置'
+  route_name: one_time_grant.one_time_grant_settings_form
+  description: 'One Time Grant 设置'
+  parent: system.admin_config_system
+  weight: 99
+
