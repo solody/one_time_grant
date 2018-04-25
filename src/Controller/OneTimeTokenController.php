@@ -3,6 +3,7 @@
 namespace Drupal\one_time_grant\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
+use Drupal\Core\Routing\TrustedRedirectResponse;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 
 /**
@@ -27,7 +28,7 @@ class OneTimeTokenController extends ControllerBase
         }
 
         $config = \Drupal::config('one_time_grant.settings');
-        return new RedirectResponse($config->get('redirect_url').'?token='.$user->id());
+        return new TrustedRedirectResponse($config->get('redirect_url').'?token='.$user->id());
     }
 
 }
