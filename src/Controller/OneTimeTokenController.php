@@ -28,7 +28,11 @@ class OneTimeTokenController extends ControllerBase
         }
 
         $config = \Drupal::config('one_time_grant.settings');
-        return new TrustedRedirectResponse($config->get('redirect_url').'?token='.$user->id());
+        $response = new TrustedRedirectResponse($config->get('redirect_url').'?token='.$user->id());
+
+        $response->getCacheableMetadata()->setCacheMaxAge(0);
+
+        return $response;
     }
 
 }
