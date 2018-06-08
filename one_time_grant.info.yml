@@ -2,6 +2,7 @@ name: 'One Time Grant'
 type: module
 description: 'Provide a custom grant type for drupal/simple_auth.'
 core: 8.x
-package: 'Custom'
+package: Custom
 dependencies:
+  - one_time_grant
   - simple_oauth
